@@ -18,9 +18,10 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title='Course Management API', version='1.0', lifespan=lifespan)
 
 # ... (your existing @app.get('/') and @app.post('/api/courses/') routes stay the same for now)
-
+{}
 @app.get("/")
 def root():
+    
     return {'message':'API running'}
 
 # Make sure you have these imports at the top if they aren't there already:
