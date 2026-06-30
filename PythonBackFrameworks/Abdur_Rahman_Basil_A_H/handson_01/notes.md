@@ -20,7 +20,7 @@ The view (`views.py`) contains the application's business logic. It validates th
 ### 4. Model Interacts with the Database and Returns a Response
 The model (`models.py`) executes database queries through Django's ORM. After fetching or modifying the data, it returns the result to the view. The view formats the data (typically as JSON for APIs) and sends an HTTP response (e.g., `200 OK`) back to the client.
 
-![alt text](image.png)
+![alt text](images/image.png)
 
 <br>
 
@@ -28,7 +28,7 @@ The model (`models.py`) executes database queries through Django's ORM. After fe
 
 Middleware sits **between the client and the URL router** on the request path, and **between the view and the client** on the response path. Every incoming request passes through the middleware before reaching `urls.py`, and every outgoing response passes through the middleware again before being sent back to the client. This allows middleware to inspect, modify, or block requests and responses globally.
 
-![alt text](image-1.png)
+![alt text](images/image-1.png)
 
 ## Builtin Middlewares
 ### 1. AuthenticationMiddleware

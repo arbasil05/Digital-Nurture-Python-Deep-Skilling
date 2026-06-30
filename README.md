@@ -1,0 +1,59 @@
+# Deep Skilling Solutions Repository
+
+Welcome to the **Deep Skilling Solutions** learning repository. This repository organizes various hands-on projects and exercises covering both Frontend Development and Python Backend Frameworks.
+
+---
+
+## 📂 Repository Structure
+
+The codebase is organized into two primary segments:
+1. **Frontend Development (`Module2_FrontendDev`)**: Focused on user interface design, styling, and client-side scripting.
+2. **Python Backend Frameworks (`PythonBackFrameworks`)**: Focused on server-side applications, database ORMs, REST APIs, and microservices.
+
+---
+
+## 🎨 Module 2: Frontend Development
+
+Access the main frontend directory: **[Frontend Workspace](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/)**
+
+| Hands-on Module | Description | Quick Link |
+| :--- | :--- | :--- |
+| 🔹 **Hands-on 01** | HTML & CSS layout structure, grid/flexbox, typography, and styling foundation. | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_01/)** |
+| 🔹 **Hands-on 02** | JavaScript dynamic DOM manipulation, event handling, AJAX/fetch integration. | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_02/)** |
+
+---
+
+## ⚙️ Module 3: Python Backend Frameworks
+
+Access the main backend directory: **[Backend Workspace](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/)**
+
+| Hands-on Module | Framework | Description | Quick Link |
+| :--- | :--- | :--- | :--- |
+| 🔸 **Hands-on 01** | **Django** | Request-response lifecycle, basic routing, and views. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_01/)** |
+| 🔸 **Hands-on 02** | **Django** | Database migrations, ORM models, and relationship queries. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_02/)** |
+| 🔸 **Hands-on 03** | **Django REST** | Model serializers, API views, and RESTful CRUD endpoints. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_03/)** |
+| 🔸 **Hands-on 04** | **Flask** | Server setup, blueprints, routes, custom error handlers. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_04/)** |
+| 🔸 **Hands-on 05** | **Flask** | SQLAlchemy database integration, migrations, and CRUD operations. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_05/)** |
+| 🔸 **Hands-on 06** | **FastAPI** | Lifespan events, Pydantic validations, aiosqlite integration. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_06/)** |
+| 🔸 **Hands-on 07** | **FastAPI** | Asynchronous repository pattern, dependency injection, SQLite operations. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_07/)** |
+
+---
+
+## 🛠️ Setup Instructions
+
+Each backend folder features a dedicated virtual environment named `.handsonXX` (e.g. `.handson01`) and a `requirements.txt` file. To run any backend module:
+
+1. Navigate to the desired module folder:
+   ```bash
+   cd PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_XX/
+   ```
+2. Activate its virtual environment:
+   - On Windows (PowerShell):
+     ```powershell
+     .\.handsonXX\Scripts\Activate.ps1
+     ```
+   - On Linux/macOS:
+     ```bash
+     source .handsonXX/bin/activate
+     ```
+3. Run the development server (Django, Flask, or FastAPI uvicorn command).
