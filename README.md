@@ -36,6 +36,8 @@ Access the main backend directory: **[Backend Workspace](./PythonBackFrameworks/
 | 🔸 **Hands-on 05** | **Flask** | SQLAlchemy database integration, migrations, and CRUD operations. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_05/)** |
 | 🔸 **Hands-on 06** | **FastAPI** | Lifespan events, Pydantic validations, aiosqlite integration. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_06/)** |
 | 🔸 **Hands-on 07** | **FastAPI** | Asynchronous repository pattern, dependency injection, SQLite operations. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_07/)** |
+| 🔸 **Hands-on 09** | **FastAPI** | User authentication (OAuth2 & JWT), password hashing, and async SQLAlchemy/SQLite database integration. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_09/)** |
+| 🔸 **Hands-on 10** | **Flask** | Microservices architecture (Course Service, Student Service, Gateway proxy) with HTTP/REST inter-service communication. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_10/)** |
 
 ---
 
