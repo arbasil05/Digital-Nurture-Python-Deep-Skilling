@@ -177,3 +177,83 @@ This project demonstrates:
 * **How it works:** Service A drops a message into a queue (like RabbitMQ or Kafka) saying "Student 1 wants to enroll in Course 1" and immediately returns a success to the user. Service B picks up the message whenever it's ready.
 * **Pros (Loose Coupling):** Highly scalable. If the Course Service crashes, the message just waits in the queue until the service comes back online. The user doesn't experience a failure.
 * **Cons:** Much more complex to set up and debug. Introduces "eventual consistency" (the data isn't perfectly synced the very millisecond the request finishes).
+
+---
+
+## How to Run the Microservices
+
+You need to run three separate components (Course Service, Student Service, and the Gateway proxy). 
+
+Follow these steps:
+
+1. Open 3 separate terminal tabs/windows in this folder:
+   ```bash
+   cd PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_10/
+   ```
+2. Activate the virtual environment in all 3 terminals:
+   * **Windows (PowerShell):**
+     ```powershell
+     .\.handson10\Scripts\Activate.ps1
+     ```
+   * **Linux/macOS:**
+     ```bash
+     source .handson10/bin/activate
+     ```
+
+3. Start each service:
+   * **Terminal 1:** Run the Course Service (starts on port 5001)
+     ```bash
+     python course_service/app.py
+     ```
+   * **Terminal 2:** Run the Student Service (starts on port 5002)
+     ```bash
+     python student_service/app.py
+     ```
+   * **Terminal 3:** Run the API Gateway (starts on port 5000)
+     ```bash
+     python gateway/app.py
+     ```
+
+## How to Test via Gateway (Port 5000)
+
+The Gateway proxies all incoming client requests to the backend services. Use an API client (like Postman or curl) to test these URLs:
+
+1. **Create a Course:**
+   * **Method:** `POST`
+   * **URL:** `http://127.0.0.1:5000/api/courses`
+   * **JSON Body:**
+     ```json
+     {
+       "name": "Python Programming"
+     }
+     ```
+
+2. **List all Courses:**
+   * **Method:** `GET`
+   * **URL:** `http://127.0.0.1:5000/api/courses`
+
+3. **Create a Student:**
+   * **Method:** `POST`
+   * **URL:** `http://127.0.0.1:5000/api/students`
+   * **JSON Body:**
+     ```json
+     {
+       "name": "Abdur Rahman",
+       "email": "rahman@example.com"
+     }
+     ```
+
+4. **List all Students:**
+   * **Method:** `GET`
+   * **URL:** `http://127.0.0.1:5000/api/students`
+
+5. **Enroll Student in Course (Inter-Service Communication):**
+   * **Method:** `POST`
+   * **URL:** `http://127.0.0.1:5000/api/students/1/enroll`
+   * **JSON Body:**
+     ```json
+     {
+       "course_id": 1
+     }
+     ```
+   *(Note: The Student Service will query the Course Service at `http://127.0.0.1:5001` behind the scenes to verify if Course `1` exists before finishing the enrollment.)*
