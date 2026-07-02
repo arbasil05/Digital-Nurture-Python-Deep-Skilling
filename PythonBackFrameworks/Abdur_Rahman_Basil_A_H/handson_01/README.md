@@ -8,14 +8,16 @@ This is a simple Django project that sets up a basic course manager server.
    ```bash
    cd PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_01/
    ```
-2. Activate the virtual environment:
+2. Create and activate a virtual environment:
    * **Windows (PowerShell):**
      ```powershell
-     .\.handson01\Scripts\Activate.ps1
+     python -m venv .venv
+     .\.venv\Scripts\Activate.ps1
      ```
    * **Linux/macOS:**
      ```bash
-     source .handson01/bin/activate
+     python3 -m venv .venv
+     source .venv/bin/activate
      ```
 3. Install dependencies:
    ```bash

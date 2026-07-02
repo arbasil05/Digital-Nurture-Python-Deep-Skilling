@@ -190,15 +190,22 @@ Follow these steps:
    ```bash
    cd PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_10/
    ```
-2. Activate the virtual environment in all 3 terminals:
+2. Create and activate a virtual environment in all 3 terminals:
    * **Windows (PowerShell):**
      ```powershell
-     .\.handson10\Scripts\Activate.ps1
+     python -m venv .venv
+     .\.venv\Scripts\Activate.ps1
      ```
    * **Linux/macOS:**
      ```bash
-     source .handson10/bin/activate
+     python3 -m venv .venv
+     source .venv/bin/activate
      ```
+
+   Then, install dependencies in each terminal:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 3. Start each service:
    * **Terminal 1:** Run the Course Service (starts on port 5001)

@@ -8,14 +8,16 @@ This is a FastAPI application that manages courses asynchronously using SQLAlche
    ```bash
    cd PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_06/
    ```
-2. Activate the virtual environment:
+2. Create and activate a virtual environment:
    * **Windows (PowerShell):**
      ```powershell
-     .\.handson06\Scripts\Activate.ps1
+     python -m venv .venv
+     .\.venv\Scripts\Activate.ps1
      ```
    * **Linux/macOS:**
      ```bash
-     source .handson06/bin/activate
+     python3 -m venv .venv
+     source .venv/bin/activate
      ```
 3. Install dependencies:
    ```bash

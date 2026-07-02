@@ -8,14 +8,16 @@ This is a Flask-based Course Management API that uses SQLAlchemy (SQLite databas
    ```bash
    cd PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_05/
    ```
-2. Activate the virtual environment:
+2. Create and activate a virtual environment:
    * **Windows (PowerShell):**
      ```powershell
-     .\.handson05\Scripts\Activate.ps1
+     python -m venv .venv
+     .\.venv\Scripts\Activate.ps1
      ```
    * **Linux/macOS:**
      ```bash
-     source .handson05/bin/activate
+     python3 -m venv .venv
+     source .venv/bin/activate
      ```
 3. Install dependencies:
    ```bash

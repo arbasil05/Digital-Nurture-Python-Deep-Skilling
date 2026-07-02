@@ -43,19 +43,25 @@ Access the main backend directory: **[Backend Workspace](./PythonBackFrameworks/
 
 ## 🛠️ Setup Instructions
 
-Each backend folder features a dedicated virtual environment named `.handsonXX` (e.g. `.handson01`) and a `requirements.txt` file. To run any backend module:
+Each backend folder contains a `requirements.txt` file. To run any backend module:
 
 1. Navigate to the desired module folder:
    ```bash
    cd PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_XX/
    ```
-2. Activate its virtual environment:
+2. Create and activate a virtual environment:
    - On Windows (PowerShell):
      ```powershell
-     .\.handsonXX\Scripts\Activate.ps1
+     python -m venv .venv
+     .\.venv\Scripts\Activate.ps1
      ```
    - On Linux/macOS:
      ```bash
-     source .handsonXX/bin/activate
+     python3 -m venv .venv
+     source .venv/bin/activate
      ```
-3. Run the development server (Django, Flask, or FastAPI uvicorn command).
+3. Install the dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run the development server (Django, Flask, or FastAPI uvicorn command).
