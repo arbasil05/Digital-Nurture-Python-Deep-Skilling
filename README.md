@@ -6,9 +6,10 @@ Welcome to the **Deep Skilling Solutions** learning repository. This repository 
 
 ## 📂 Repository Structure
 
-The codebase is organized into two primary segments:
+The codebase is organized into three primary segments:
 1. **Frontend Development (`Module2_FrontendDev`)**: Focused on user interface design, styling, and client-side scripting.
-2. **Python Backend Frameworks (`PythonBackFrameworks`)**: Focused on server-side applications, database ORMs, REST APIs, and microservices.
+2. **Database Integration (`Module3_DatabaseIntegration`)**: Focused on database schema design, normalization, referential integrity, and SQL DDL operations.
+3. **Python Backend Frameworks (`PythonBackFrameworks`)**: Focused on server-side applications, database ORMs, REST APIs, and microservices.
 
 ---
 
@@ -20,6 +21,16 @@ Access the main frontend directory: **[Frontend Workspace](./Module2_FrontendDev
 | :--- | :--- | :--- |
 | 🔹 **Hands-on 01** | HTML & CSS layout structure, grid/flexbox, typography, and styling foundation. | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_01/)** |
 | 🔹 **Hands-on 02** | JavaScript dynamic DOM manipulation, event handling, AJAX/fetch integration. | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_02/)** |
+
+---
+
+## 🗄️ Module 3: Database Integration
+
+Access the main database integration directory: **[Database Integration Workspace](./Module3_DatabaseIntegration/Abdur_Rahman_Basil_AH/)**
+
+| Hands-on Module | Description | Quick Link |
+| :--- | :--- | :--- |
+| 🔹 **Hands-on 01** | Database schema design, SQL DDL (CREATE/ALTER/DROP), constraints, normalisation, and referential integrity. | **[Open Folder 📂](./Module3_DatabaseIntegration/Abdur_Rahman_Basil_AH/handson_01/)** |
 
 ---
 
