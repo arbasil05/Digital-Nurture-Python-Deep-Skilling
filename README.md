@@ -13,7 +13,7 @@ The codebase is organized into three primary segments:
 
 ---
 
-## 🎨 Module 2: Frontend Development
+## 🎨 Module 1: Frontend Development
 
 Access the main frontend directory: **[Frontend Workspace](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/)**
 
@@ -24,17 +24,7 @@ Access the main frontend directory: **[Frontend Workspace](./Module2_FrontendDev
 
 ---
 
-## 🗄️ Module 3: Database Integration
-
-Access the main database integration directory: **[Database Integration Workspace](./Module3_DatabaseIntegration/Abdur_Rahman_Basil_AH/)**
-
-| Hands-on Module | Description | Quick Link |
-| :--- | :--- | :--- |
-| 🔹 **Hands-on 01** | Database schema design, SQL DDL (CREATE/ALTER/DROP), constraints, normalisation, and referential integrity. | **[Open Folder 📂](./Module3_DatabaseIntegration/Abdur_Rahman_Basil_AH/handson_01/)** |
-
----
-
-## ⚙️ Module 3: Python Backend Frameworks
+## ⚙️ Module 2: Python Backend Frameworks
 
 Access the main backend directory: **[Backend Workspace](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/)**
 
@@ -49,6 +39,16 @@ Access the main backend directory: **[Backend Workspace](./PythonBackFrameworks/
 | 🔸 **Hands-on 07** | **FastAPI** | Asynchronous repository pattern, dependency injection, SQLite operations. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_07/)** |
 | 🔸 **Hands-on 09** | **FastAPI** | User authentication (OAuth2 & JWT), password hashing, and async SQLAlchemy/SQLite database integration. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_09/)** |
 | 🔸 **Hands-on 10** | **Flask** | Microservices architecture (Course Service, Student Service, Gateway proxy) with HTTP/REST inter-service communication. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_10/)** |
+
+---
+
+## 🗄️ Module 3: Database Integration
+
+Access the main database integration directory: **[Database Integration Workspace](./Module3_DatabaseIntegration/Abdur_Rahman_Basil_AH/)**
+
+| Hands-on Module | Description | Quick Link |
+| :--- | :--- | :--- |
+| 🔹 **Hands-on 01** | Database schema design, SQL DDL (CREATE/ALTER/DROP), constraints, normalisation, and referential integrity. | **[Open Folder 📂](./Module3_DatabaseIntegration/Abdur_Rahman_Basil_AH/handson_01/)** |
 
 ---
 
