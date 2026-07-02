@@ -208,7 +208,7 @@ async def get_student(student_id: int, db: AsyncSession = Depends(get_db)):
 @app.put('/api/students/{student_id}', response_model=StudentResponse, status_code=status.HTTP_200_OK,tags=["Student"])
 async def update_student(student_id: int, student_update: StudentCreate, db: AsyncSession = Depends(get_db)):
     """update a studnet record"""
-    # find and update student details
+
     query = select(models.Student).where(models.Student.id == student_id)
     result = await db.execute(query)
     db_student = result.scalar_one_or_none()
