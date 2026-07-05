@@ -1,0 +1,139 @@
+// TASK 1 - CREATE COLLECTION AND INSERT DOCUMENTS
+
+//  In MongoDB Compass or mongosh, create a database named college_nosql.
+
+use('college_nosql');
+
+// Create a collection called feedback and insert 10 docs
+
+db.feedback.insertMany([
+    { student_id: 1, course_code: 'CS101', semester: '2022-ODD', rating: 4, comments: 'Excellent teaching.', tags: ['challenging', 'good-examples'], submitted_at: new Date('2022-11-30T10:15:00Z'), attachments: [{ filename: 'notes.pdf', size_kb: 240 }] },
+    { student_id: 2, course_code: 'CS101', semester: '2022-ODD', rating: 5, comments: 'Loved the course.', tags: ['fun', 'well-structured'], submitted_at: new Date('2022-11-28T09:00:00Z'), attachments: [] },
+    { student_id: 3, course_code: 'CS101', semester: '2022-ODD', rating: 3, comments: 'A bit fast-paced.', tags: ['challenging', 'heavy-workload'], submitted_at: new Date('2022-12-01T14:30:00Z'), attachments: [{ filename: 'cheat_sheet.pdf', size_kb: 150 }] },
+    { student_id: 4, course_code: 'CS102', semester: '2022-EVEN', rating: 4, comments: 'Good lab sessions.', tags: ['practical', 'hands-on'], submitted_at: new Date('2023-05-15T11:00:00Z'), attachments: [{ filename: 'lab_code.zip', size_kb: 1024 }] },
+    { student_id: 5, course_code: 'CS102', semester: '2022-EVEN', rating: 2, comments: 'TAs were unhelpful.', tags: ['frustrating', 'hard-grading'], submitted_at: new Date('2023-05-16T16:45:00Z'), attachments: [] },
+    { student_id: 6, course_code: 'MA201', semester: '2022-ODD', rating: 5, comments: 'Concepts explained clearly.', tags: ['theory', 'well-structured'], submitted_at: new Date('2022-12-05T08:20:00Z'), attachments: [{ filename: 'formulas.pdf', size_kb: 300 }] },
+    { student_id: 7, course_code: 'EE101', semester: '2023-ODD', rating: 1, comments: 'Terrible textbook.', tags: ['boring', 'too-much-reading'], submitted_at: new Date('2023-11-10T12:00:00Z'), attachments: [] },
+    { student_id: 8, course_code: 'PH101', semester: '2023-EVEN', rating: 4, comments: 'Great experiments.', tags: ['practical', 'fun'], submitted_at: new Date('2024-04-20T09:15:00Z'), attachments: [{ filename: 'experiment_data.csv', size_kb: 50 }] },
+    { student_id: 9, course_code: 'CS103', semester: '2023-EVEN', rating: 3, comments: 'Average class.', tags: ['okay'], submitted_at: new Date('2024-05-01T10:00:00Z'), attachments: [] },
+    { student_id: 10, course_code: 'CS104', semester: '2023-ODD', rating: 5, comments: 'Best class ever!', tags: ['amazing', 'must-take'], submitted_at: new Date('2023-12-10T15:30:00Z') }
+]);
+
+//  Veriy inserts using db.feedback.countDocuments()
+
+db.feedback.countDocuments()
+
+// ---------------------------------------------------------
+// TASK 2
+// ---------------------------------------------------------
+
+//  Find all feedback documents where rating is 5
+db.feedback.find({ rating: 5 });
+
+// Find feedback for CS101 containing the challenging tag
+
+db.feedback.find({
+    course_code: 'CS101',
+    tags: "challenging"
+})
+
+// Projection (student_id, course_code and rating,excluding the _id field)
+
+db.feedback.find(
+    {},
+    {
+        _id: 0,
+        student_id: 1,
+        course_code: 1,
+        rating: 1
+    }
+)
+
+// Add needs_review true to documents with rating < 3
+db.feedback.updateMany(
+    { rating: { $lt: 3 } },
+    { $set: { needs_review: true } }
+)
+
+//  Push reviewd tag into the tags array where needs_review is true
+db.feedback.updateMany(
+    { needs_review: true },
+    { $push: { tags: 'reviewed' } }
+);
+
+// Delete all feeedback wehre semester is '2021-Even'
+
+db.feedback.deleteMany({ semester: '2021-EVEN' });
+
+// -----------------------------------------------------------
+// TASK 3
+// -----------------------------------------------------------
+
+// Filter '2022-ODD', Group by course_code (avg rating, count), Sort descending
+
+db.feedback.aggregate([
+    { $match: { semester: '2022-ODD' } },
+    {
+        $group: {
+            _id: '$course_code',
+            avg_rating: { $avg: '$rating' },
+            total_feedback: { $sum: 1 }
+        }
+    },
+    { $sort: { avg_rating: -1 } }
+]);
+
+// Extend the previous pipeline with a $project stage to round the average
+db.feedback.aggregate([
+    { $match: { semester: '2022-ODD' } },
+    {
+        $group: {
+            _id: '$course_code',
+            avg_rating: { $avg: '$rating' },
+            total_feedback: { $sum: 1 }
+        }
+    },
+    {
+        $project: {
+            _id: 1,
+            total_feedback: 1,
+            average_rating: { $round: ['$avg_rating', 1] }
+        }
+    },
+    { $sort: { average_rating: -1 } }
+]);
+
+// Tag frequency leaderboard using $unwind
+
+db.feedback.aggregate([
+    { $unwind: '$tags' },
+    {
+        $group: {
+            _id: '$tags',
+            count: { $sum: 1 }
+        }
+    },
+    { $sort: { count: -1 } }
+]);
+
+// Create an index on course_code
+db.feedback.createIndex({ course_code: 1 });
+
+// Verify index usage with explain('execution states)
+db.feedback.find({ course_code: 'CS101' }).explain('executionStats');
+
+//  inputStage: {
+//         stage: 'IXSCAN',
+//         nReturned: 3,
+//         executionTimeMillisEstimate: 11,
+//         works: 4,
+//         advanced: 3,
+//         needTime: 0,
+//         needYield: 0,
+//         saveState: 1,
+//         restoreState: 1,
+//         isEOF: 1,
+//         nss: 'college_nosql;.feedback',
+//         keyPattern: {
+//           course_code: 1
+        // },

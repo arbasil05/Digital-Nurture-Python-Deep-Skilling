@@ -103,3 +103,4 @@ def get_course_students(id):
     students = Student.query.join(Enrollment).filter(Enrollment.course_id == id).all()
 
     return make_response_json([s.to_dict() for s in students], 200)
+

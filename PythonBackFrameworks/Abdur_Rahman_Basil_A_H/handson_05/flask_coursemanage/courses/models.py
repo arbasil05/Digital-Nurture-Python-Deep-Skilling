@@ -54,6 +54,12 @@ class Enrollment(db.Model):
     student = db.relationship('Student', back_populates='enrollments')
     course = db.relationship('Course', back_populates='enrollments')
 
+    def __init__(self, student_id, course_id, grade=None, **kwargs):
+        super().__init__(**kwargs)
+        self.student_id = student_id
+        self.course_id = course_id
+        self.grade = grade
+
     def to_dict(self):
         return {
             "id": self.id,
