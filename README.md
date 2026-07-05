@@ -1,6 +1,6 @@
 # Deep Skilling Solutions Repository
 
-Welcome to the **Deep Skilling Solutions** learning repository. This repository organizes various hands-on projects and exercises covering both Frontend Development and Python Backend Frameworks.
+Welcome to the **Deep Skilling Solutions** repository. This contains my solutions for the Deep Skilling track of the Cognizant Digital Nurture 5.0 Program for the Python Full Stack Engineer role. It organizes various hands-on projects and exercises covering Frontend Development, Database Integration, and Python Backend Frameworks.
 
 ---
 
@@ -17,10 +17,10 @@ The codebase is organized into three primary segments:
 
 Access the main frontend directory: **[Frontend Workspace](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/)**
 
-| Hands-on Module | Description | Quick Link |
+| <span style="white-space: nowrap">Hands-on Module</span> | Description | Quick Link |
 | :--- | :--- | :--- |
-| 🔹 **Hands-on 01** | HTML & CSS layout structure, grid/flexbox, typography, and styling foundation. | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_01/)** |
-| 🔹 **Hands-on 02** | JavaScript dynamic DOM manipulation, event handling, AJAX/fetch integration. | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_02/)** |
+| <span style="white-space: nowrap">🔹 **Hands-on 01**</span> | HTML & CSS layout structure, grid/flexbox, typography, and styling foundation. | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_01/)** |
+| <span style="white-space: nowrap">🔹 **Hands-on 02**</span> | JavaScript dynamic DOM manipulation, event handling, AJAX/fetch integration. | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_02/)** |
 
 ---
 
@@ -28,17 +28,17 @@ Access the main frontend directory: **[Frontend Workspace](./Module2_FrontendDev
 
 Access the main backend directory: **[Backend Workspace](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/)**
 
-| Hands-on Module | Framework | Description | Quick Link |
+| <span style="white-space: nowrap">Hands-on Module</span> | <span style="white-space: nowrap">Framework</span> | Description | Quick Link |
 | :--- | :--- | :--- | :--- |
-| 🔸 **Hands-on 01** | **Django** | Request-response lifecycle, basic routing, and views. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_01/)** |
-| 🔸 **Hands-on 02** | **Django** | Database migrations, ORM models, and relationship queries. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_02/)** |
-| 🔸 **Hands-on 03** | **Django REST** | Model serializers, API views, and RESTful CRUD endpoints. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_03/)** |
-| 🔸 **Hands-on 04** | **Flask** | Server setup, blueprints, routes, custom error handlers. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_04/)** |
-| 🔸 **Hands-on 05** | **Flask** | SQLAlchemy database integration, migrations, and CRUD operations. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_05/)** |
-| 🔸 **Hands-on 06** | **FastAPI** | Lifespan events, Pydantic validations, aiosqlite integration. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_06/)** |
-| 🔸 **Hands-on 07** | **FastAPI** | Asynchronous repository pattern, dependency injection, SQLite operations. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_07/)** |
-| 🔸 **Hands-on 09** | **FastAPI** | User authentication (OAuth2 & JWT), password hashing, and async SQLAlchemy/SQLite database integration. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_09/)** |
-| 🔸 **Hands-on 10** | **Flask** | Microservices architecture (Course Service, Student Service, Gateway proxy) with HTTP/REST inter-service communication. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_10/)** |
+| <span style="white-space: nowrap">🔸 **Hands-on 01**</span> | <span style="white-space: nowrap">**Django**</span> | Request-response lifecycle, basic routing, and views. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_01/)** |
+| <span style="white-space: nowrap">🔸 **Hands-on 02**</span> | <span style="white-space: nowrap">**Django**</span> | Database migrations, ORM models, and relationship queries. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_02/)** |
+| <span style="white-space: nowrap">🔸 **Hands-on 03**</span> | <span style="white-space: nowrap">**Django REST**</span> | Model serializers, API views, and RESTful CRUD endpoints. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_03/)** |
+| <span style="white-space: nowrap">🔸 **Hands-on 04**</span> | <span style="white-space: nowrap">**Flask**</span> | Server setup, blueprints, routes, custom error handlers. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_04/)** |
+| <span style="white-space: nowrap">🔸 **Hands-on 05**</span> | <span style="white-space: nowrap">**Flask**</span> | SQLAlchemy database integration, migrations, and CRUD operations. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_05/)** |
+| <span style="white-space: nowrap">🔸 **Hands-on 06**</span> | <span style="white-space: nowrap">**FastAPI**</span> | Lifespan events, Pydantic validations, aiosqlite integration. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_06/)** |
+| <span style="white-space: nowrap">🔸 **Hands-on 07**</span> | <span style="white-space: nowrap">**FastAPI**</span> | Asynchronous repository pattern, dependency injection, SQLite operations. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_07/)** |
+| <span style="white-space: nowrap">🔸 **Hands-on 09**</span> | <span style="white-space: nowrap">**FastAPI**</span> | User authentication (OAuth2 & JWT), password hashing, and async SQLAlchemy/SQLite database integration. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_09/)** |
+| <span style="white-space: nowrap">🔸 **Hands-on 10**</span> | <span style="white-space: nowrap">**Flask**</span> | Microservices architecture (Course Service, Student Service, Gateway proxy) with HTTP/REST inter-service communication. | **[Open Folder 📂](./PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_10/)** |
 
 ---
 
@@ -46,33 +46,15 @@ Access the main backend directory: **[Backend Workspace](./PythonBackFrameworks/
 
 Access the main database integration directory: **[Database Integration Workspace](./Module3_DatabaseIntegration/Abdur_Rahman_Basil_AH/)**
 
-| Hands-on Module | Description | Quick Link |
+| <span style="white-space: nowrap">Hands-on Module</span> | Description | Quick Link |
 | :--- | :--- | :--- |
-| 🔹 **Hands-on 01** | Database schema design, SQL DDL (CREATE/ALTER/DROP), constraints, normalisation, and referential integrity. | **[Open Folder 📂](./Module3_DatabaseIntegration/Abdur_Rahman_Basil_AH/handson_01/)** |
+| <span style="white-space: nowrap">🔹 **Hands-on 01**</span> | Database schema design, SQL DDL (CREATE/ALTER/DROP), constraints, normalisation, and referential integrity. | **[Open Folder 📂](./Module3_DatabaseIntegration/Abdur_Rahman_Basil_AH/handson_01/)** |
+| <span style="white-space: nowrap">🔹 **Hands-on 02**</span> | SQL DML operations (INSERT, UPDATE, DELETE), SQL Queries (filtering, sorting, formatting), JOINs, and GROUP BY aggregations. | **[Open Folder 📂](./Module3_DatabaseIntegration/Abdur_Rahman_Basil_AH/handson_02/)** |
+| <span style="white-space: nowrap">🔹 **Hands-on 03**</span> | Advanced SQL: Subqueries, views, stored procedures, and transaction management (COMMIT, ROLLBACK, SAVEPOINT). | **[Open Folder 📂](./Module3_DatabaseIntegration/Abdur_Rahman_Basil_AH/handson_03/)** |
+| <span style="white-space: nowrap">🔹 **Hands-on 04**</span> | Query performance optimization: EXPLAIN analysis, indexing, and resolving N+1 query problems. | **[Open Folder 📂](./Module3_DatabaseIntegration/Abdur_Rahman_Basil_AH/handson_04/)** |
+| <span style="white-space: nowrap">🔹 **Hands-on 05**</span> | MongoDB document CRUD operations, aggregate pipelines ($unwind, $group, $sort), indexing, and performance analysis. | **[Open Folder 📂](./Module3_DatabaseIntegration/Abdur_Rahman_Basil_AH/handson_05/)** |
+| <span style="white-space: nowrap">🔹 **Hands-on 06**</span> | SQLAlchemy ORM models, bidirectional relationships, CRUD operations, and solving the N+1 problem with joinedload. | **[Open Folder 📂](./Module3_DatabaseIntegration/Abdur_Rahman_Basil_AH/handson_06/)** |
+| <span style="white-space: nowrap">🔹 **Hands-on 07**</span> | Database migrations with Alembic: initial schema creation, schema updates, auto-generation, and revision rollbacks. | **[Open Folder 📂](./Module3_DatabaseIntegration/Abdur_Rahman_Basil_AH/handson_07/)** |
+
 
 ---
-
-## 🛠️ Setup Instructions
-
-Each backend folder contains a `requirements.txt` file. To run any backend module:
-
-1. Navigate to the desired module folder:
-   ```bash
-   cd PythonBackFrameworks/Abdur_Rahman_Basil_A_H/handson_XX/
-   ```
-2. Create and activate a virtual environment:
-   - On Windows (PowerShell):
-     ```powershell
-     python -m venv .venv
-     .\.venv\Scripts\Activate.ps1
-     ```
-   - On Linux/macOS:
-     ```bash
-     python3 -m venv .venv
-     source .venv/bin/activate
-     ```
-3. Install the dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Run the development server (Django, Flask, or FastAPI uvicorn command).
