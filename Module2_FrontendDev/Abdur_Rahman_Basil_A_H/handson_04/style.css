@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: #f0f2f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.95rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #dce7ff;
+    border-bottom: 2px solid #b8c8f0;
+}
+
+#hero h1 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    color: #1e3a8a;
+}
+
+#hero p {
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    color: #444;
+}
+
+button {
+    padding: 0.6rem 1.4rem;
+    border: 2px solid #1e3a8a;
+    border-radius: 4px;
+    background-color: white;
+    color: #1e3a8a;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover {
+    background-color: #1e3a8a;
+    color: white;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem 2rem 0;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#search-course {
+    flex: 1;
+    padding: 0.55rem 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+#search-course:focus {
+    border-color: #1e3a8a;
+}
+
+#courses {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#courses h2 {
+    margin-bottom: 1.25rem;
+    font-size: 1.4rem;
+    color: #1e3a8a;
+    border-bottom: 2px solid #1e3a8a;
+    padding-bottom: 0.4rem;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.25rem;
+}
+
+.course-card {
+    background-color: white;
+    padding: 1.25rem;
+    border: 1px solid #d0d7e5;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: box-shadow 0.2s, transform 0.15s;
+}
+
+.course-card:hover {
+    box-shadow: 0 4px 12px rgba(30, 58, 138, 0.15);
+    transform: translateY(-2px);
+}
+
+.course-card h2 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+    color: #1e3a8a;
+}
+
+.course-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.25rem;
+}
+
+#total-credits {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+footer {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+    font-size: 0.9rem;
+}
+
+/* ── Notifications ─────────────────────────────── */
+
+#notifications {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+#notifications > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#notifications h1 {
+    font-size: 1.4rem;
+    color: #1e3a8a;
+    border-bottom: 2px solid #1e3a8a;
+    padding-bottom: 0.3rem;
+    flex: 1;
+}
+
+#retry-button {
+    font-size: 0.85rem;
+    padding: 0.35rem 0.9rem;
+    border: 1px dashed #1e3a8a;
+    border-radius: 3px;
+    background: #f0f4ff;
+    color: #1e3a8a;
+    cursor: pointer;
+}
+
+#retry-button:hover {
+    background: #dce7ff;
+}
+
+.notification-item {
+    background: #fff;
+    border-left: 4px solid #6b96e8;
+    padding: 0.85rem 1rem;
+    margin-bottom: 0.75rem;
+    border-radius: 0 4px 4px 0;
+    box-shadow: 1px 1px 4px rgba(0,0,0,0.06);
+}
+
+.notification-item h2 {
+    font-size: 0.95rem;
+    color: #1e3a8a;
+    margin-bottom: 0.3rem;
+    text-transform: capitalize;
+}
+
+.notification-item p {
+    font-size: 0.88rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+#notifications-loading {
+    color: #666;
+    font-style: italic;
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+}
+
+#notifications-error {
+    color: #b91c1c;
+    background: #fef2f2;
+    border: 1px solid #fca5a5;
+    border-radius: 4px;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+}
