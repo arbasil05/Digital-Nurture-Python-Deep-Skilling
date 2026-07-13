@@ -1,0 +1,39 @@
+<h2>Edit Student Profile</h2>
+
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()" style="max-width: 400px; display: flex; flex-direction: column; gap: 15px;">
+
+  <div>
+    <label>Full Name:</label><br>
+    <input type="text" formControlName="name" style="width: 100%; padding: 8px;">
+    
+    @if (profileForm.get('name')?.invalid && profileForm.get('name')?.touched) {
+      <div style="color: red; font-size: 12px; margin-top: 5px;">Name is required.</div>
+    }
+  </div>
+
+  <div>
+    <label>Email Address:</label><br>
+    <input type="email" formControlName="email" style="width: 100%; padding: 8px;">
+    
+    @if (profileForm.get('email')?.invalid && profileForm.get('email')?.touched) {
+      <div style="color: red; font-size: 12px; margin-top: 5px;">Enter a valid email.</div>
+    }
+  </div>
+
+  <div>
+    <label>Current Semester (1-8):</label><br>
+    <input type="number" formControlName="semester" style="width: 100%; padding: 8px;">
+    
+    @if (profileForm.get('semester')?.invalid && profileForm.get('semester')?.touched) {
+      <div style="color: red; font-size: 12px; margin-top: 5px;">Semester must be between 1 and 8.</div>
+    }
+  </div>
+
+  <button 
+    type="submit" 
+    [disabled]="profileForm.invalid"
+    style="padding: 10px; background-color: #007bff; color: white; border: none; cursor: pointer;">
+    Save Profile
+  </button>
+
+</form>
