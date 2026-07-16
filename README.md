@@ -21,6 +21,12 @@ Access the main frontend directory: **[Frontend Workspace](./Module2_FrontendDev
 | :--- | :--- | :--- |
 | <span style="white-space: nowrap">🔹 **Hands-on 01**</span> | HTML & CSS layout structure, grid/flexbox, typography, and styling foundation. | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_01/)** |
 | <span style="white-space: nowrap">🔹 **Hands-on 02**</span> | JavaScript dynamic DOM manipulation, event handling, AJAX/fetch integration. | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_02/)** |
+| <span style="white-space: nowrap">🔹 **Hands-on 03**</span> | JavaScript array methods, filtering, sorting, and dynamic data rendering. | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_03/)** |
+| <span style="white-space: nowrap">🔹 **Hands-on 04**</span> | Fetch API, Promises, async/await, and Axios API integration. | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_04/)** |
+| <span style="white-space: nowrap">🔹 **Hands-on 05**</span> | Vite build tool setup, module bundler configuration, and structure. | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_05/)** |
+| <span style="white-space: nowrap">🔹 **Hands-on 07**</span> | Angular application framework basics and component structure. | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_07/)** |
+| <span style="white-space: nowrap">🔹 **Hands-on 08**</span> | Vue.js framework basics, reactive properties, and components. | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_08/)** |
+| <span style="white-space: nowrap">🔹 **Hands-on 09**</span> | Web performance optimization and auditing with Google Lighthouse. | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_09/)** |
 
 ---
 
