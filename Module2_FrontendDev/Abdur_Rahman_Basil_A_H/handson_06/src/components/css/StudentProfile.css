@@ -1,0 +1,37 @@
+/* StudentProfile.css */
+
+.profile-form {
+    display: grid;
+    gap: 1.25rem;
+    max-width: 100%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #4b5563;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group input {
+    padding: 0.65rem 0.9rem;
+    border: 1px solid #d0d7e5;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    outline: none;
+    font-family: Georgia, serif;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: white;
+}
+
+.form-group input:focus {
+    border-color: #1e3a8a;
+    box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.15);
+}
