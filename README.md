@@ -24,9 +24,11 @@ Access the main frontend directory: **[Frontend Workspace](./Module2_FrontendDev
 | <span style="white-space: nowrap">🔹 **Hands-on 03**</span> | JavaScript array methods, filtering, sorting, and dynamic data rendering. | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_03/)** |
 | <span style="white-space: nowrap">🔹 **Hands-on 04**</span> | Fetch API, Promises, async/await, and Axios API integration. | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_04/)** |
 | <span style="white-space: nowrap">🔹 **Hands-on 05**</span> | Vite build tool setup, module bundler configuration, and structure. | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_05/)** |
+| <span style="white-space: nowrap">🔹 **Hands-on 06**</span> | React framework basics, components, props, and state. | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_06/)** |
 | <span style="white-space: nowrap">🔹 **Hands-on 07**</span> | Angular application framework basics and component structure. | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_07/)** |
 | <span style="white-space: nowrap">🔹 **Hands-on 08**</span> | Vue.js framework basics, reactive properties, and components. | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_08/)** |
 | <span style="white-space: nowrap">🔹 **Hands-on 09**</span> | Web performance optimization and auditing with Google Lighthouse. | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_09/)** |
+| <span style="white-space: nowrap">🔹 **Hands-on 10**</span> | API Integration & Advanced State Management (React, Redux Toolkit). | **[Open Folder 📂](./Module2_FrontendDev/Abdur_Rahman_Basil_A_H/handson_10/)** |
 
 ---
 
