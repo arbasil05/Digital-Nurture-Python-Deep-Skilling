@@ -10,6 +10,7 @@ The codebase is organized into three primary segments:
 1. **Frontend Development (`Module2_FrontendDev`)**: Focused on user interface design, styling, and client-side scripting.
 2. **Database Integration (`Module3_DatabaseIntegration`)**: Focused on database schema design, normalization, referential integrity, and SQL DDL operations.
 3. **Python Backend Frameworks (`PythonBackFrameworks`)**: Focused on server-side applications, database ORMs, REST APIs, and microservices.
+4. **Selenium Basics (`SeleniumBasics`)**: Focused on browser automation, UI testing, Pytest, and Page Object Model design.
 
 ---
 
@@ -66,4 +67,19 @@ Access the main database integration directory: **[Database Integration Workspac
 | <span style="white-space: nowrap">🔹 **Hands-on 07**</span> | Database migrations with Alembic: initial schema creation, schema updates, auto-generation, and revision rollbacks. | **[Open Folder 📂](./Module3_DatabaseIntegration/Abdur_Rahman_Basil_AH/handson_07/)** |
 
 
+
 ---
+
+## 🤖 Module 4: Selenium Basics
+
+Access the main Selenium basics directory: **[Selenium Workspace](./SeleniumBasics/Abdur_Rahman_Basil_A_H/)**
+
+| <span style="white-space: nowrap">Hands-on Module</span> | Description | Quick Link |
+| :--- | :--- | :--- |
+| <span style="white-space: nowrap">🔹 **Hands-on 01**</span> | Introduction to Selenium WebDriver and basic browser interactions. | **[Open Folder 📂](./SeleniumBasics/Abdur_Rahman_Basil_A_H/handson_01/)** |
+| <span style="white-space: nowrap">🔹 **Hands-on 02**</span> | Locating web elements using ID, Name, XPath, and CSS Selectors. | **[Open Folder 📂](./SeleniumBasics/Abdur_Rahman_Basil_A_H/handson_02/)** |
+| <span style="white-space: nowrap">🔹 **Hands-on 03**</span> | Handling dropdowns, checkboxes, and radio buttons. | **[Open Folder 📂](./SeleniumBasics/Abdur_Rahman_Basil_A_H/handson_03/)** |
+| <span style="white-space: nowrap">🔹 **Hands-on 04**</span> | Explicit and implicit waits, handling synchronization issues. | **[Open Folder 📂](./SeleniumBasics/Abdur_Rahman_Basil_A_H/handson_04/)** |
+| <span style="white-space: nowrap">🔹 **Hands-on 05**</span> | Handling alerts, frames, and multiple windows. | **[Open Folder 📂](./SeleniumBasics/Abdur_Rahman_Basil_A_H/handson_05/)** |
+| <span style="white-space: nowrap">🔹 **Hands-on 06**</span> | Selenium Playground interactions, advanced form submissions, and Pytest integration. | **[Open Folder 📂](./SeleniumBasics/Abdur_Rahman_Basil_A_H/handson_06/)** |
+| <span style="white-space: nowrap">🔹 **Hands-on 07**</span> | Page Object Model (POM) design pattern and scalable test architecture. | **[Open Folder 📂](./SeleniumBasics/Abdur_Rahman_Basil_A_H/handson_07/)** |
